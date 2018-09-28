@@ -153,9 +153,13 @@ $(function() {
     e.preventDefault();
 
       $.ajax({
-          url: "https://formspree.io/mattwilliams85@gmail.com",
+          url: "/php/mail_handler.php",
           method: "POST",
-          data: { message: $('form').serialize() },
+          data: { 
+            name: $('input[name="name"]').val(),
+            email: $('input[name="email"]').val(),
+            message: $('textarea[name="message"]').val() 
+          },
           dataType: "json"
       }).done(function(response) {
           $('#success').addClass('expand');
