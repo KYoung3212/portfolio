@@ -625,9 +625,9 @@ section {
       section:nth-of-type(4) .blog-wrap #thumb-1 {
         background: url("../img/blog-1.jpg") center center/cover; }
       section:nth-of-type(4) .blog-wrap #thumb-2 {
-        background: url("../img/blog-2.jpg") center center/cover; }
+        background: url("../img/bubbling.jpg") center center/cover; }
       section:nth-of-type(4) .blog-wrap #thumb-3 {
-        background: url("../img/blog-3.jpg") center center/cover; }
+        background: url("../img/blog-2.jpg") center center/cover; }
       section:nth-of-type(4) .blog-wrap #thumb-4 {
         background: url("../img/blog-4.jpg") center center/cover; }
       section:nth-of-type(4) .blog-wrap .fade-wrap {
