@@ -4,6 +4,7 @@ var studentArray = [];
 
 function initializeApp() {
     addClickHandlersToElements();
+    inputEnter();
     getDataFromServer();
     $(document).ajaxStart(function () {
         $('.fa-spin').show();
@@ -36,6 +37,13 @@ function handleCancelClick() {
     console.log('handleCancelClicked: success')
 }
 
+function inputEnter() {
+    $('input').keydown(function (e) {
+        if (e.keyCode == 13) {
+            $('.addButton').click();
+        }
+    });
+}
 
 function addStudent() {
     var studentName = $('#studentName').val();
@@ -112,7 +120,10 @@ function renderStudentOnDom(studentObj) {
         });
         console.log(this);
         var studentID = $(this).attr('id');
+        var studentName = $(this).attr('studentName')
+        $('#editModalHeader').text(`Student to Change: ${studentObj.name}`);
         $('#idHolder').text(studentID);
+        $('#saveChanges').off();
         $('#saveChanges').on('click', handleSavedUpdate);
         $('#cancelChanges').on('click', function () {
             $('#editModal').modal('hide');

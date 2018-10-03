@@ -8,7 +8,7 @@ $editedGrade = $_GET['editedGrade'];
 $id = $_GET['buttonID'];
 //check if you have all the data you need from the client-side call.  This should include the fields being changed and the ID of the student to be changed
 //if not, add an appropriate error to errors
-$query = "UPDATE `student_data` SET `name`='$editedName',`grade`='$editedGrade',`course_name`='$editedCourse' WHERE `id` = '$id'";
+$query = "UPDATE `student_data` SET `name`='$editedName',`grade`='$editedGrade',`course_name`='$editedCourse' WHERE `id` = $id";
 //write a query that updates the data at the given student ID.  
 $result = mysqli_query($conn, $query);
 //send the query to the database, store the result of the query into $result
