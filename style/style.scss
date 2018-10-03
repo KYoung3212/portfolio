@@ -349,7 +349,6 @@ nav {
   position: relative;
   height: 250px;
   margin: 0 auto;
-  top: 6vh;
 
 }
 
@@ -357,14 +356,13 @@ nav {
   overflow: hidden;
   position: relative;
   background: #222;
-  top: 6vh;
+
 
 }
 
 #carousel {
   width: 10000px;
   position: relative;
-  top: 6vh;
   
 }
 
@@ -375,7 +373,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 6vh;
 
 }
 
@@ -405,12 +402,10 @@ nav {
   position: fixed;
   pointer-events: none;
   z-index: 100;
-  top: 6vh;
 
   .mask {
     height: 100%; width: 100%;
     position: absolute;
-    top: 6vh;
     left: 0;
     background: rgba(0,0,0,0.5);
     opacity: 0;
@@ -429,7 +424,6 @@ nav {
     box-sizing: border-box;
     color: #333;
     height: 100vh;
-    top: 6vh;
 
   }
 
@@ -506,7 +500,6 @@ nav {
 
   .carousel {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-    top: 6vh;
 
   }
 
@@ -527,7 +520,6 @@ section {
   color: #616161;
   line-height: 11pt;
   position: relative;
-  top: 6vh;
 
 
   .container {
@@ -536,7 +528,6 @@ section {
     padding: 0 10px;
     width: 100%;
     box-sizing: border-box;
-    top: 6vh;
 
   }
 
@@ -1085,7 +1076,6 @@ footer {
 
   .container {
     padding: 0 20px;
-    top: 6vh;
 
   }
 
@@ -1109,19 +1099,15 @@ footer {
 
   .slide, .carousel-wrap {
     height: 450px;
-    top: 6vh;
 
   }
 
   .mdi-chevron-left, .mdi-chevron-right {
-    font-size: 25pt !important;
   }
 
   .modal-wrap {
-    top: 6vh;
 
     .modal {
-      top: 6vh;
       height: initial;
     }
     .info-box {

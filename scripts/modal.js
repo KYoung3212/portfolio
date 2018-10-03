@@ -5,7 +5,7 @@ $(document).ready(function(){
     standapp: {
       title: 'StandApp',
       tag: 'SOCIAL MEDIA PLATFORM.',
-      detail: 'StandApp provides users a platform to record their audio only performances to then share with the world for feedback. Being built entirely with React JS and Redux on the frontend, and AWS S3 services on the backend, StandApp is able allow users to get rid of the concept of stage-fright by taking away the stage.  Think Americas Got Talent without the stage.',
+      detail: 'StandApp provides users a platform to record their audio only performances to then share with the world for feedback. Being built as a mobile-app, entirely with React JS and Redux on the frontend, and AWS S3 services on the backend, StandApp is able allow users to get rid of the concept of stage-fright by taking away the stage.  Think Americas Got Talent without the stage.',
       link: 'https://www.standapp.live'
     },
     walker: {
@@ -19,7 +19,7 @@ $(document).ready(function(){
       detail: 'Powur is a multi-level marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
       link: 'http://www.powur.com/with/42'
     },
-    mystand: {
+    SGT: {
       title: 'Student Grade Table',
       tag: 'FULL-STACK STUDENT GRADE TRACKING SYSTEM.',
       detail: 'The Student Grade table is a full-stack web application that utilizes PHP calls to access the customized MySQL tables to keep track of the student grades for the given year, along with the class average.',
