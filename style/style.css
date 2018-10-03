@@ -638,7 +638,7 @@ section {
       section:nth-of-type(4) .blog-wrap #thumb-3 {
         background: url("../img/blog-2.jpg") center center/cover; }
       section:nth-of-type(4) .blog-wrap #thumb-4 {
-        background: url("../img/blog-4.jpg") center center/cover; }
+        background: url("../img/inception.jpg") center center/cover; }
       section:nth-of-type(4) .blog-wrap .fade-wrap {
         transition: opacity .3s; }
       section:nth-of-type(4) .blog-wrap.fade .fade-wrap {
