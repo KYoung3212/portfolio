@@ -23,6 +23,7 @@ $(document).ready(function(){
       title: 'Student Grade Table',
       tag: 'FULL-STACK STUDENT GRADE TRACKING SYSTEM.',
       detail: 'The Student Grade table is a full-stack web application that utilizes PHP calls to access the customized MySQL tables to keep track of the student grades for the given year, along with the class average.',
+      link: 'https://www.kevin-young.us/SGT'
     },
     never: {
       title: 'NeverSurrender',

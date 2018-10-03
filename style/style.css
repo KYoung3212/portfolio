@@ -254,7 +254,7 @@ nav {
   overflow: hidden;
   position: relative;
   background: #222; 
-  top: 5vh}
+  top: 1vh}
 
 #carousel {
   width: 10000px;
@@ -376,7 +376,7 @@ nav {
       background: #fff; }
   .modal-wrap .carousel {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); 
-    top: 5vh}
+    top: 1vh}
   .modal-wrap.visible {
     pointer-events: initial; }
     .modal-wrap.visible .modal {
@@ -816,7 +816,7 @@ footer {
     font-size: 25pt !important; }
 
   .modal-wrap .modal {
-    top: 5vh;
+    top: 1vh;
     height: initial; }
   .modal-wrap .info-box {
     padding: 35px 60px 90px 25px; }

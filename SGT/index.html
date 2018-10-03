@@ -10,6 +10,58 @@
     <script src="script.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        /* screen smaller than 1176px */
+        @media screen and (max-width: 1175px) {
+            .small-btn {
+                font-size: 13px;
+                padding: 6px 12px;
+            }
+            .student-add-form {
+                padding-left: 0px;
+            }
+            /* screen smaller than 981px */
+            @media screen and (max-width: 981px) {
+                .student-add-form {
+                    padding-left: 0px;
+                }
+                .small-btn {
+                    font-size: 10;
+                    /* padding: 3px 10px; */
+                }
+            }
+            /* screen smaller than 765px */
+            @media screen and (max-width: 765px) {
+                .small-btn {
+                    font-size: 14px;
+                    padding: 6px 12px;
+                }
+                .student-add-form {
+                    padding-left: 15px;
+                }
+            }
+            /* smaller than 414px iphone standard */
+            @media screen and (max-width: 414px) {
+                .table>tbody>tr>td,
+                .table>tbody>tr>th,
+                .table>tfoot>tr>td,
+                .table>tfoot>tr>th,
+                .table>thead>tr>td,
+                .table>thead>tr>th {
+                    padding: 8px 3px 8px 0px;
+                    line-height: 1.42857143;
+                    vertical-align: top;
+                    border-top: 1px solid #ddd;
+                }
+            }
+            @media screen and (max-width: 360px) {
+                body {
+                    font-size: 12px;
+                }
+            }
+    
+        }
+    </style>
 </head>
 
 <body>
@@ -48,12 +100,12 @@
                 </span>
                 <input type="text" class="form-control grade" name="studentGrade" id="studentGrade" placeholder="Student Grade">
             </div>
-            <button type="button" class="btn btn-success addButton ">
+            <button type="button" class="small-btn btn btn-success addButton ">
                 <i class="fa fa-spinner fa-spin"></i> Add
             </button>
-            <button type="button" class="btn btn-default cancel" onclick="">Cancel</button>
+            <button type="button" class="small-btn btn btn-default cancel" onclick="">Cancel</button>
             <div>
-                <button type="button" class="btn btn-warning serverData" onclick="">Get Data From Server</button>
+                <button type="button" class="small-btn btn btn-warning serverData" onclick="">Get Data From Server</button>
             </div>
         </div>
         <div class="student-list-container col-md-8">
