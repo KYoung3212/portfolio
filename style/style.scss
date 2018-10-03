@@ -349,18 +349,21 @@ nav {
   position: relative;
   height: 250px;
   margin: 0 auto;
+
 }
 
 .window {
   overflow: hidden;
   position: relative;
   background: #222;
+
+
 }
 
 #carousel {
   width: 10000px;
   position: relative;
-  top: 0;
+  
 }
 
 .slide {
@@ -370,6 +373,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 
@@ -402,7 +406,6 @@ nav {
   .mask {
     height: 100%; width: 100%;
     position: absolute;
-    top: 0;
     left: 0;
     background: rgba(0,0,0,0.5);
     opacity: 0;
@@ -421,6 +424,7 @@ nav {
     box-sizing: border-box;
     color: #333;
     height: 100vh;
+
   }
 
   .close {
@@ -496,6 +500,7 @@ nav {
 
   .carousel {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+
   }
 
   &.visible {
@@ -516,12 +521,14 @@ section {
   line-height: 11pt;
   position: relative;
 
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
     width: 100%;
     box-sizing: border-box;
+
   }
 
   //HOME
@@ -689,6 +696,7 @@ section {
 
     .filter-wrap {
       position: relative;
+      
     }
 
     .filter {
@@ -1068,6 +1076,7 @@ footer {
 
   .container {
     padding: 0 20px;
+
   }
 
   .header {
@@ -1083,20 +1092,22 @@ footer {
   }
 
   .hex-wrap {
-    height: 100px; width: 100px
+    height: 100px; width: 100px;
+    top: 6vh;
+
   }
 
   .slide, .carousel-wrap {
     height: 450px;
+
   }
 
   .mdi-chevron-left, .mdi-chevron-right {
-    font-size: 25pt !important;
   }
 
   .modal-wrap {
+
     .modal {
-      top: -6vh;
       height: initial;
     }
     .info-box {

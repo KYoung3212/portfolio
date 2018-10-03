@@ -247,17 +247,20 @@ nav {
 .carousel-wrap {
   position: relative;
   height: 250px;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  }
 
 .window {
   overflow: hidden;
   position: relative;
-  background: #222; }
+  background: #222; 
+  top: 1vh}
 
 #carousel {
   width: 10000px;
   position: relative;
-  top: 0; }
+  top: 0; 
+ }
 
 .slide {
   height: 250px;
@@ -265,7 +268,8 @@ nav {
   float: left;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center; 
+}
 
 .mdi-chevron-left, .mdi-chevron-right {
   cursor: pointer;
@@ -292,7 +296,8 @@ nav {
   width: 100vw;
   position: fixed;
   pointer-events: none;
-  z-index: 100; }
+  z-index: 100; 
+  }
   .modal-wrap .mask {
     height: 100%;
     width: 100%;
@@ -301,7 +306,8 @@ nav {
     left: 0;
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity .3s; }
+    transition: opacity .3s; 
+    }
   .modal-wrap .modal {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -313,7 +319,8 @@ nav {
     text-align: left;
     box-sizing: border-box;
     color: #333;
-    height: 100vh; }
+    height: 100vh; 
+    }
   .modal-wrap .close {
     bottom: 25px;
     right: 10px;
@@ -368,7 +375,8 @@ nav {
       color: #E31B6D;
       background: #fff; }
   .modal-wrap .carousel {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); }
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); 
+    top: 1vh}
   .modal-wrap.visible {
     pointer-events: initial; }
     .modal-wrap.visible .modal {
@@ -571,7 +579,8 @@ section {
         section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
           background: url("../img/thumb-2.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-          background: url("../img/thumb-3.jpg") center center/cover; }
+          background: url("../img/thumb-3.jpg") center center/contain no-repeat; 
+          }
         section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
           background: url("../img/thumb-4.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
@@ -807,7 +816,7 @@ footer {
     font-size: 25pt !important; }
 
   .modal-wrap .modal {
-    top: -6vh;
+    top: 1vh;
     height: initial; }
   .modal-wrap .info-box {
     padding: 35px 60px 90px 25px; }
