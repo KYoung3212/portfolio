@@ -22,7 +22,7 @@ $(document).ready(function(){
     SGT: {
       title: 'Student Grade Table',
       tag: 'FULL-STACK STUDENT GRADE TRACKING SYSTEM.',
-      detail: 'The Student Grade table is a full-stack web application that utilizes PHP calls to access the customized MySQL tables to keep track of the student grades for the given year, along with the class average.',
+      detail: 'The Student Grade table is a full-stack web application that utilizes PHP calls to access the customized MySQL tables to keep track of the student grades for the given year, along with the class average. Utilizes CRON to regularly scrub data to protect from hackers and profanity. ',
       link: 'https://www.kevin-young.us/SGT'
     },
     never: {
