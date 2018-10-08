@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="searchbar.css">
     <script src="script.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -66,13 +66,65 @@
 
 <body>
     <div class="container">
+
+<!-- Search Bar -->
+            <div class="container top-buffer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group" id="adv-search">
+                                <input type="text" class="form-control" placeholder="Search for students" />
+                                <div class="input-group-btn">
+                                    <div class="btn-group" role="group">
+                                        <div class="dropdown dropdown-lg">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                <form class="form-horizontal" role="form">
+                                                  <div class="form-group">
+                                                    <label for="filter">Filter by</label>
+                                                    <select class="form-control">
+                                                        <option value="0" selected>All Students</option>
+                                                        <option value="1">Student Name</option>
+                                                        <option value="2">Student Course</option>
+                                                        <option value="3">Student Grade</option>
+                                                    </select>
+                                                  </div>
+                                                  <!-- <div class="form-group">
+                                                    <label for="contain">Author</label>
+                                                    <input class="form-control" type="text" />
+                                                  </div> -->
+                                                  <div class="form-group">
+                                                    <label for="contain">Contains the words</label>
+                                                    <input class="form-control" type="text" />
+                                                  </div>
+                                                  <button type="submit" onClick = 'searchSubmit' class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <button type="button submit" onClick = 'searchSubmit' class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+<!-- End of Search Bar HTML -->
         <div class="table-responsive table-hover page-header">
             <!-- only show this element when the isnt on mobile -->
             <h1 class="visible-md visible-lg">Student Grade Table
-                <small class="pull-right visible-md visible-lg table-default">Grade Average :
+                    <!-- <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search for names.."> -->
+                    <!-- <form class="form-inline md-form form-sm">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                    </form> -->
+
+                    <small class="pull-right visible-md visible-lg table-default">Grade Average :
                     <span class="avgGrade label label-default">0%</span>
                 </small>
             </h1>
+            
+
+                
             <!-- only show this element when the user gets to a mobile version -->
             <h3 class="visible-sm visible-xs">Student Grade Table
                 <small class="pull-right visible-sm visible-xs table-default">Grade Average :
