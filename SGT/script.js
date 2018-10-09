@@ -17,7 +17,7 @@ function initializeApp() {
 function addClickHandlersToElements() {
     $('.addButton').on('click', handleAddClicked);
     $('.cancel').on('click', handleCancelClick);
-    $('.serverData').on('click', getDataFromServer);
+    $('.serverData').on('click', () => {getDataFromServer()});
 
     console.log('Add Click Handlers');
 
@@ -297,3 +297,72 @@ function loadSpinner() {
         $('.fa-spin').hide();
     })
 }
+
+function searchSubmit(){
+    var input = $('#mySearch').val();
+    var search = $('select').val();
+    var type;
+    switch(search) {
+        case "0":
+        type = "all";
+        break;
+        case "1":
+        type = "name"
+        break;
+        case "2": 
+        type = "course"
+        break;
+        case "3":
+        type = "grade"
+        break; 
+    }
+    console.log(input);
+    console.log(type);
+    event.preventDefault();
+    var the_data = {
+        // api_key: "OH4GI7VfKh",
+        action: type,
+
+        filter: input
+    }
+    var ajaxOptions = {
+        dataType: 'json',
+        data: the_data,
+        method: 'GET',
+        url: 'data.php',
+
+        success: function (response) {
+            console.log(response)
+            var responseArray = response.data;
+            $('tbody').empty();
+            for (var i = 0; i < responseArray.length; i++) {
+                studentArray = responseArray;
+                renderStudentOnDom(responseArray[i]);
+                var avgGrade = calculateGradeAverage(responseArray);
+                $(".avgGrade").text(avgGrade + "%")
+            }
+        },
+        error: failedToRetrieve
+    }
+
+    $.ajax(ajaxOptions);
+
+
+
+        // Declare variables
+        // var input, filter, ul, li, a, i;
+        // input = document.getElementById("mySearch");
+        // filter = input.value.toUpperCase();
+        // ul = document.getElementById("myMenu");
+        // li = ul.getElementsByTagName("li");
+    
+        // // Loop through all list items, and hide those who don't match the search query
+        // for (i = 0; i < li.length; i++) {
+        //     a = li[i].getElementsByTagName("a")[0];
+        //     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        //         li[i].style.display = "";
+        //     } else {
+        //         li[i].style.display = "none";
+        //     }
+        // }
+    }
