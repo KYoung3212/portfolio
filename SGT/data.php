@@ -7,7 +7,6 @@ if(empty($_GET['action'])){
 }
 require ('mysql_connect.php');
 
-
 $output = [
 	'success'=> false, //we assume we will fail
 	'errors'=>[]
@@ -32,6 +31,10 @@ switch($_GET['action']){
 		include('./dataApi/update.php');
 
 		//include the update.php file
+		break;
+	case 'name':
+		include('./dataApi/name.php');
+		//include the name.php file
 		break;
 }
 
