@@ -32,6 +32,10 @@ switch($_GET['action']){
 
 		//include the update.php file
 		break;
+	case 'all':
+		include('./dataApi/all.php');
+		//include the course.php file
+		break;
 	case 'name':
 		include('./dataApi/name.php');
 		//include the name.php file

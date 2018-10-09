@@ -5,6 +5,7 @@ var studentArray = [];
 function initializeApp() {
     addClickHandlersToElements();
     inputEnter();
+    searchEnter();
     getDataFromServer();
     $(document).ajaxStart(function () {
         $('.fa-spin').show();
@@ -41,6 +42,14 @@ function inputEnter() {
     $('input').keydown(function (e) {
         if (e.keyCode == 13) {
             $('.addButton').click();
+        }
+    });
+}
+
+function searchEnter() {
+    $('#mySearch').keydown(function (e) {
+        if (e.keyCode == 13) {
+            $('.searchButton').click();
         }
     });
 }
@@ -179,7 +188,7 @@ function handleSavedUpdate(){
             $('#editGrade').val('');
             $('tbody').empty();
             getDataFromServer();
-            updateStudentList();
+            // updateStudentList();
         },
         error: function () {
             $('#errorModal').modal('show');
@@ -304,15 +313,12 @@ function searchSubmit(){
     var type;
     switch(search) {
         case "0":
-        type = "all";
-        break;
-        case "1":
         type = "name"
         break;
-        case "2": 
+        case "1": 
         type = "course"
         break;
-        case "3":
+        case "2":
         type = "grade"
         break; 
     }
@@ -332,7 +338,8 @@ function searchSubmit(){
         url: 'data.php',
 
         success: function (response) {
-            console.log(response)
+            console.log(response);
+            if (response.data) {
             var responseArray = response.data;
             $('tbody').empty();
             for (var i = 0; i < responseArray.length; i++) {
@@ -341,8 +348,15 @@ function searchSubmit(){
                 var avgGrade = calculateGradeAverage(responseArray);
                 $(".avgGrade").text(avgGrade + "%")
             }
+        }
+        else{
+            $('#searchModal').modal('show');
+        }
         },
-        error: failedToRetrieve
+        error:  function(error) {
+            $('#searchModal').modal('show')
+        }
+
     }
 
     $.ajax(ajaxOptions);
