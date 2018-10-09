@@ -22,7 +22,7 @@ $(document).ready(function(){
     SGT: {
       title: 'Student Grade Table',
       tag: 'FULL-STACK STUDENT GRADE TRACKING SYSTEM.',
-      detail: 'A Content management system (CMS) that allows for the ability to create, read, and delete student grade information from a database.  As a full-stack web application that utilizes PHP calls to access the customized MySQL tables to keep track of the student grades for the given year, along with the class average, SGT utilizes CRON to regularly scrub data to protect from hackers and profanity. ',
+      detail: 'A Content Management System (CMS) that allows users to search, create, read, and delete student grade information from a MySQL database. As a full-stack web application that utilizes PHP calls to access the customized MySQL tables, SGT utilizes CRON to regularly scrub data to protect from hackers and profanity. A search bar is also implemented to easily narrow the student list down based off student name, course, and grade.',
       link: 'https://www.kevin-young.us/SGT'
     },
     never: {
