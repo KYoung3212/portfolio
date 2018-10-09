@@ -36,6 +36,14 @@ switch($_GET['action']){
 		include('./dataApi/name.php');
 		//include the name.php file
 		break;
+	case 'course':
+		include('./dataApi/course.php');
+		//include the course.php file
+		break;
+	case 'grade':
+		include('./dataApi/grade.php');
+		//include the course.php file
+		break;
 }
 
 //convert the $output variable to json, store the result in $outputJSON
