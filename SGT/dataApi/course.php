@@ -26,6 +26,7 @@ if(empty($result)){
 		}
 		}
 	
+		
 
 	//if it is, add 'database error' to errors
 //else: 
