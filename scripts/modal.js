@@ -48,9 +48,24 @@ $(document).ready(function(){
     $('.modal-wrap, #modal .button').removeClass('visible');
   });
 
-  $('.mask').on('click', function(){
+  $('.mask').on('click', function(){z
     $('.modal-wrap, #modal .button').removeClass('visible');
   });
+
+  $('#gallery .mod').on('click', function(){
+    fillModal(this.id);
+    $('.modal-wrap').addClass('visible');
+  });
+
+  $('.close').on('click', function(){
+    $('.modal-wrap, #modal .button').removeClass('visible');
+  });
+
+  $('.mask').on('click', function(){z
+    $('.modal-wrap, #modal .button').removeClass('visible');
+  });
+
+  
 
   var carousel = $('#carousel'),
       slideWidth = 700,
