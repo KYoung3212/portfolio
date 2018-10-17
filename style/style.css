@@ -322,7 +322,7 @@ nav {
     height: 100vh; 
     }
   .modal-wrap .close {
-    bottom: 25px;
+    bottom: 50px;
     right: 10px;
     color: #bbb;
     font-size: 20pt;
@@ -366,7 +366,7 @@ nav {
     pointer-events: none;
     visibility: hidden;
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 10px; }
     .modal-wrap .button.visible {
       pointer-events: initial;
@@ -832,7 +832,8 @@ footer {
   .modal-wrap .close {
     right: 25px; }
   .modal-wrap .button {
-    left: 25px; }
+    left: 25px; 
+  bottom: 50px}
 
   nav .link-wrap {
     position: initial;
