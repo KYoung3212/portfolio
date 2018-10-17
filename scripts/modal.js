@@ -13,27 +13,29 @@ $(document).ready(function(){
       tag: 'PERFORMANCE METRICS.',
       detail: 'Walker Tracker offers goal management, fitness tracking, and team competitions to companies for internal use. A Ruby on Rails and Javascript companion site for the Walker Tracker App. Features visual metrics and gamified progression system.',
     },
-    powur: {
-      title: 'Powur.com',
-      tag: 'MULTI-LEVEL MARKETING.',
-      detail: 'Powur is a multi-level marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
-      link: 'http://www.powur.com/with/42'
-    },
     SGT: {
       title: 'Student Grade Table',
       tag: 'FULL-STACK STUDENT GRADE TRACKING SYSTEM.',
       detail: 'A Content Management System (CMS) that allows users to search, create, read, and delete student grade information from a MySQL database. As a full-stack web application that utilizes PHP calls to access the customized MySQL tables, SGT utilizes CRON to regularly scrub data to protect from hackers and profanity. A search bar is also implemented to easily narrow the student list down based off student name, course, and grade.',
       link: 'https://www.kevin-young.us/SGT'
     },
-    never: {
-      title: 'NeverSurrender',
-      tag: 'ALS AWARENESS.',
-      detail: 'NeverSurrender is a platform for the new ALS foundation mobile app in hopes to raise awareness and research funding to fight ALS. Pure JavaScript marketing site to promote the new ALS NeverSurrender app.',
+    whack: {
+      title: 'Whack-A-Mole',
+      tag: 'Real-Time Whack-a-mole game.',
+      detail: 'Whack-A-Mole is a React based desktop/mobile game, utlizing animations, to give the user a real-time experience.',
+      link: 'http://whack-a-mole.kevin-young.us'
     },
-    themall: {
-      title: 'The Mall',
-      tag: 'PEER GUIDED SHOPPING.',
-      detail: 'The Mall is a place to follow the latest fashion purchases of your friends and favorite celebrities. Built with Node.js and Handlebars. Features the ability to import thousands of top brands products into one shopping site.',
+    audiovisualizer: {
+      title: 'Audio Visualizer',
+      tag: 'Loadable/Real-time audio visualizer.',
+      detail: 'The Audio Visualizer brings any .mp3 file to life with the use of Canvas and .mp3 uploads.',
+      link: 'https://www.kevin-young.us/audio-visualizer'
+    },
+    drumkit: {
+      title: 'Drum Kit',
+      tag: 'Interactive Freestyle Drum-Kit',
+      detail: 'The Drum Kit creates a real-time drum kit, allowing the user to create their own sounds with the use of the keyboard or mouse.',
+      link: 'https://www.kevin-young.us/drum-kit'
     }
   };
 
