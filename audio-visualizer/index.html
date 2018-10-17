@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Audio Visualizer</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="loader.css" />
+		<link href='http://fonts.googleapis.com/css?family=Karla:400,300,100,500,700' rel='stylesheet' type='text/css'>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="header">Scroll while hovered over audio player to adjust volume</div>
+		<div id="footer">Made by Kevin Young &copy;  2018</a> &#8211; Fork this on <a href="https://github.com/KYoung3212/audio-visualizer" target="_blank">GitHub</a></div>
+		<div id="error" class="hidden">
+			<div id="error-dialog">
+				<h1 id="error-title"></h1>
+				<p id="error-text"></p>
+				<button id="error-button">Dismiss</button>
+			</div>
+		</div>
+		<div id="chooser">
+			<h1>Audio Visualizer</h1>
+			<div id="chooser-dialog">
+				<h2>Choose a song</h2>
+				<input type="file" id="chooser-input" />
+				<p>Audio files only (MIME: audio/*). The files are processed locally.</p>
+				<div id="spinner-outer" class="hidden"><svg id="spinner" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="15" cy="15" r="13"></circle></svg></div><button id="chooser-button">Play song</button>
+			</div>
+		</div>
+		<div id="scene" class="hidden">
+			<canvas width="600" height="600" id="scene-canvas"></div>
+		</div>
+	</body>
+</html>
