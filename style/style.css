@@ -485,8 +485,8 @@ section {
       transition: 1.9s 0.2s width ease-in-out; }
     section:nth-of-type(2) .bar:nth-child(10) .fill {
       transition: 2s 0.2s width ease-in-out; }
-    section:nth-of-type(2) .bar span {
-      display: none; }
+    /* section:nth-of-type(2) .bar span {
+      display: none; } */
     section:nth-of-type(2) .bar.fill {
       top: 0;
       left: 0;
@@ -616,7 +616,8 @@ section {
           opacity: 1;
           bottom: 24%; }
   section .flex-50-gt-sm {
-    display: block; }
+    display: block;
+  width: 100%; }
   section:nth-of-type(4) {
     padding: 130px 0 100px 0;
     text-align: left; }
@@ -965,6 +966,7 @@ footer {
     flex-direction: row; }
 
   .flex-50-gt-sm {
+    width: 50%;
     -webkit-flex: 1 1 50%;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
