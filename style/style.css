@@ -462,7 +462,8 @@ section {
     background-color: #eee;
     margin: 0 0 12px 0;
     align-items: flex-end;
-    font-size: 7pt; }
+    font-size: 7pt;
+    width: 30% }
     section:nth-of-type(2) .bar:nth-child(1) .fill {
       transition: 1.1s 0.2s width ease-in-out; }
     section:nth-of-type(2) .bar:nth-child(2) .fill {
@@ -489,7 +490,8 @@ section {
       top: 0;
       left: 0;
       position: absolute;
-      background-color: #00A1A7;
+      /* background-color: #00A1A7; */
+      /* getting rid of bars^ */
       padding: 0;
       opacity: 1; }
     section:nth-of-type(2) .bar .tag {
@@ -878,7 +880,10 @@ footer {
     section:nth-of-type(2) .bar {
       height: 28px;
       margin: 0 0 15px 0;
-      font-size: 11pt; }
+      font-size: 11pt; 
+      width: 30%
+        /* getting rid of bars^ */
+}
       section:nth-of-type(2) .bar span {
         display: initial; }
       section:nth-of-type(2) .bar .tag {
