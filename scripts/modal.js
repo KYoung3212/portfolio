@@ -44,26 +44,25 @@ $(document).ready(function(){
     $('.modal-wrap').addClass('visible');
   });
 
-  $('.close').on('click', function(){
-    $('.modal-wrap, #modal .button').removeClass('visible');
-  });
-
-  $('.mask').on('click', function(){z
-    $('.modal-wrap, #modal .button').removeClass('visible');
-  });
-
   $('#gallery .mod').on('click', function(){
     fillModal(this.id);
     $('.modal-wrap').addClass('visible');
   });
 
-  $('.close').on('click', function(){
-    $('.modal-wrap, #modal .button').removeClass('visible');
+  $('.close, .mask').on('click', function(){
+    $('.modal-wrap').removeClass('visible');
   });
 
-  $('.mask').on('click', function(){z
-    $('.modal-wrap, #modal .button').removeClass('visible');
-  });
+// CLOSE MODAL ONCLICK OUTSIDE MODAL
+  // $(document).click(function(event) {
+  //   //if you click on anything except the modal itself or the "open modal" link, close the modal
+  //   if (!$(event.target).closest(".modal").length) {
+  //     $("body").find('.modal-wrap, .modal, #modal .button').removeClass("visible");
+  //   }
+  // });
+  // CLOSE MODAL ONCLICK OUTSIDE MODAL
+
+
 
   
 
