@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
     <link rel="stylesheet" href="searchbar.css">
     <script src="script.js"></script>
 
@@ -109,6 +110,8 @@
                     </div>
                 </div>
 <!-- End of Search Bar HTML -->
+<div class="container">
+
         <div class="table-responsive table-hover page-header">
             <!-- only show this element when the isnt on mobile -->
             <h1 class="visible-md visible-lg">Student Grade Table
@@ -132,34 +135,43 @@
                 </small>
             </h3>
         </div>
-        <div class="student-add-form col-md-3 pull-right ">
+        <div class="student-add-form col-md-3 pull-right">
             <h4>Add Student</h4>
+        <form data-toggle="validator" role="form">
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-user "></span>
                 </span>
-                <input type="text" class="form-control studentName" name="studentName" id="studentName" placeholder="Student Name">
+                <input type="text" class="form-control studentName" name="studentName" id="studentName" placeholder="Student Name" pattern="^[a-z ,.'-]+$" data-error="Please enter a valid name"  required>
+                <div class="help-block with-errors"></div>
             </div>
+            
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-modal-window"></span>
                 </span>
-                <input type="text" class="form-control course" name="course" id="course" placeholder="Student Course">
+                <input type="text" class="form-control course" name="course" id="course" placeholder="Student Course" data-error="Please enter a valid course" required>
+                <div class="help-block with-errors"></div>
+
             </div>
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-education"></span>
                 </span>
-                <input type="text" class="form-control grade" name="studentGrade" id="studentGrade" placeholder="Student Grade">
+                <input type="text" class="form-control grade" name="studentGrade" id="studentGrade" placeholder="Student Grade" maxlength="3" pattern="^[1-9]?[0-9]{1}$|^100$" data-error="Please enter a valid grade" required>
+                <div class="help-block with-errors"></div>
+
             </div>
             <button type="button" class="small-btn btn btn-success addButton ">
-                <i class="fa fa-spinner fa-spin"></i> Add
+                 Add
             </button>
             <button type="button" class="small-btn btn btn-default cancel" onclick="">Cancel</button>
             <div>
-                <button type="button" class="small-btn btn btn-warning serverData" onclick="">Get Data From Server</button>
+                <button type="button" class="small-btn btn btn-warning serverData" onclick=""><i class="fa fa-spinner fa-spin"></i> Get Data From Server</button>
             </div>
         </div>
+    </form>
+
         <div class="student-list-container col-md-8">
             <table class="student-list table table-border table-responsive">
                 <thead>
@@ -175,6 +187,8 @@
             </table>
         </div>
     </div>
+</div>
+
 
 
     <!-- Error Modal -->
@@ -247,15 +261,48 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <p id="editModalHeader" class = "text-center"></p>
-                    <p id="idHolder" class = "text-center"></p>
+                    <p id="idHolder" class = "text-center hidden"></p>
                 </div>
                 <div class="modal-body">
-                    <input type="text" class="form-control" name="studentName" id="editName" placeholder="Student Name">
-                    <input type="text" class="form-control" name="course" id="editCourse" placeholder="Course">
-                    <input type="text" class="form-control" name="grade" id="editGrade" placeholder="Grade">
-                    <button id="saveChanges" class="btn btn-success">Save Changes</button>
-                    <button id="cancelChanges" class="btn btn-danger">Cancel</button>
-                    <!-- <p id="idHolder"></p> -->
+
+                        <form data-toggle="validator" role="form">
+                                <div class="form-group input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-user "></span>
+                                    </span>
+                                    <input type="text" class="form-control studentName" name="studentName" id="editName" placeholder="Student Name" pattern="^[a-z ,.'-]+$" data-error="Please enter a valid name"  required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                
+                                <div class="form-group input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-modal-window"></span>
+                                    </span>
+                                    <input type="text" class="form-control course" name="course" id="editCourse" placeholder="Student Course" data-error="Please enter a valid course" required>
+                                    <div class="help-block with-errors"></div>
+                    
+                                </div>
+                                <div class="form-group input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-education"></span>
+                                    </span>
+                                    <input type="text" class="form-control grade" name="studentGrade" id="editGrade" placeholder="Student Grade" maxlength="3" pattern="^[1-9]?[0-9]{1}$|^100$" data-error="Please enter a valid grade" required>
+                                    <div class="help-block with-errors"></div>
+                    
+                                </div>
+                                <button id="saveChanges" class="btn btn-success"  style="margin-bottom: 10px">Save Changes</button>
+                                <button id="cancelChanges" class="btn btn-danger"  style="margin-bottom: 10px">Cancel</button>
+                                </div>
+                            </form>
+                <!-- <form data-toggle="validator" role="form">
+
+                    <input type="text" class="form-control" name="studentName" id="editName" style="margin-bottom: 10px" placeholder="Student Name" pattern="^[a-zA-Z]+$" data-error="Please enter a valid name"  required>                 <div class="help-block with-errors"></div>
+
+                    <input type="text" class="form-control" name="course" id="editCourse"  style="margin-bottom: 10px" placeholder="Course" data-error="Please enter a valid course" required>
+                    <input type="text" class="form-control" name="grade" id="editGrade"  style="margin-bottom: 10px" placeholder="Grade" maxlength="3" pattern="^[1-9]?[0-9]{1}$|^100$" data-error="Please enter a valid grade" required>
+                    <button id="saveChanges" class="btn btn-success"  style="margin-bottom: 10px">Save Changes</button>
+                    <button id="cancelChanges" class="btn btn-danger"  style="margin-bottom: 10px">Cancel</button>
+                </form> <p id="idHolder"></p> -->
                 <div class="modal-footer">
                 </div>
             </div>
