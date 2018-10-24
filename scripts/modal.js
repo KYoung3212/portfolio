@@ -8,10 +8,11 @@ $(document).ready(function(){
       detail: 'StandApp provides users a platform to record their audio only performances to then share with the world for feedback. Being built as a mobile-app, entirely with React JS and Redux on the frontend, and AWS S3 services on the backend, StandApp is able allow users to get rid of the concept of stage-fright by taking away the stage.  Think Americas Got Talent without the stage.',
       link: 'https://www.standapp.live'
     },
-    walker: {
-      title: 'WalkerTracker',
-      tag: 'PERFORMANCE METRICS.',
-      detail: 'Walker Tracker offers goal management, fitness tracking, and team competitions to companies for internal use. A Ruby on Rails and Javascript companion site for the Walker Tracker App. Features visual metrics and gamified progression system.',
+    airbnb: {
+      title: 'Airbnb Template ',
+      tag: 'Self-created template utilizing HTML5 & CSS3',
+      detail: 'My self-created airbnb website template demonstrates my ability to create a responsive homepage for companies who want to catch the user interest with a modern look/approach.',
+      link: 'https://www.kevin-young.us/airbnb-template'
     },
     SGT: {
       title: 'Student Grade Table',
