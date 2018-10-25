@@ -14,7 +14,7 @@ if(empty($message['name'])){
     $output['messages'][] = 'missing name key';
 }
 $message['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-if(empty($message['email'])){
+if(empty($message['email'])){ 
     $output['success'] = false;
     $output['messages'][] = 'invalid email key';
 }
@@ -79,14 +79,14 @@ $mail->isHTML(true);                                  // Set email format to HTM
 //Only neccesary is no subject provided
 $message['subject'] = $message['name']. "has sent you a message on your portfolio";
 $message['subject'] = substr($message['message'], 0, 78);
-$mail->Subject = 'mailer message from '.$_POST['name'];
+$mail->Subject = 'mailer message from '.$message['name'];
 $mail->Body    = "
 	time: ".date('Y-m-d H:is:s')."<br>
 	from: {$_SERVER['REMOTE_ADDR']}<br>
-	name: {$_POST['name']}<br>
-	email: {$_POST['email']}<br>
+	name: {$message['name']}<br>
+	email: {$message['email']}<br>
 	subject: {$message['subject']}<br>
-	message: {$_POST['body']}
+	message: {$message['message']}
 ";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

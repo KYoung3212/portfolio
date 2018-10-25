@@ -152,10 +152,10 @@
             <br>
             I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
             <br>
-            <span class="page-link highlight" dest="contact">Let's make something special.</span>
+            <span class="page-link highlight" dest="contact" style="cursor: pointer">Let's make something special.</span>
             <div class="icon-wrap flex row">
             <a href="https://docs.google.com/document/d/1cwSWrquxHmsEbOiPaUxaCQocV5e6gAJbwnJ6Qx8nFZU/edit?usp=sharing" target="_blank">
-              <div class="flex icon" id="icon-3">
+              <div class="flex icon" id="icon-3" style="cursor: pointer">
                 <i class="mdi mdi-file-document" style="font-size: 200%"></i>Resume
               </div>
             </a>
@@ -511,7 +511,7 @@
       <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">Have a question or want to work together?</div>
       <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
         <input placeholder="Name" type="text" name="name" required>
-        <input placeholder="Enter email" type="email" name="email" required>
+        <input placeholder="Enter email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
         <textarea placeholder="Your Message" type="text" name="message"></textarea>
         <div id="success">
           <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
