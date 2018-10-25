@@ -248,13 +248,14 @@ nav {
   position: relative;
   height: 250px;
   margin: 0 auto; 
+  width: 100%;
   }
 
 .window {
   overflow: hidden;
   position: relative;
   background: #222; 
-  top: 1vh}
+  top: 1vh;}
 
 #carousel {
   width: 10000px;
@@ -307,6 +308,7 @@ nav {
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .3s; 
+
     }
   .modal-wrap .modal {
     background: #fff;
@@ -320,6 +322,7 @@ nav {
     box-sizing: border-box;
     color: #333;
     height: 100vh; 
+
     }
   .modal-wrap .close {
     bottom: 50px;
@@ -813,7 +816,8 @@ footer {
     width: 100px; }
 
   .slide, .carousel-wrap {
-    height: 450px; }
+    height: 450px; 
+  }
 
   .mdi-chevron-left, .mdi-chevron-right {
     font-size: 25pt !important; }
