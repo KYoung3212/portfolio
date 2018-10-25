@@ -54,6 +54,14 @@ $(document).ready(function(){
     $('.modal-wrap').removeClass('visible');
   });
 
+  $(window).on('resize', function(event) {
+    // if (this.innerWidth < 735) {
+      slideWidth = this.innerWidth;
+      slideWidth = slideWidth * .75;
+      setDimensions();
+    // }
+  });
+
 // CLOSE MODAL ONCLICK OUTSIDE MODAL
   // $(document).click(function(event) {
   //   //if you click on anything except the modal itself or the "open modal" link, close the modal
@@ -68,7 +76,7 @@ $(document).ready(function(){
   
 
   var carousel = $('#carousel'),
-      slideWidth = 700,
+      slideWidth = $(window).innerWidth() * .75,
       threshold = slideWidth/3,
       dragStart, 
       dragEnd;
@@ -96,7 +104,7 @@ $(document).ready(function(){
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      slideWidth = $(window).innerWidth();
     }
-    $('.carousel-wrap, .slide').css({
+    $('.slide').css({
                                       'width': slideWidth,
     });
     $('.modal').css('max-width', slideWidth);
