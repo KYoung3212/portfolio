@@ -26,11 +26,14 @@ function addClickHandlersToElements() {
 }
 
 function handleAddClicked() {
-    console.log('handleAddClick: success')
-    if ($('#studentName').val() === '' && $('#course').val() === '' && $('#studentGrade').val() === '') {
+    console.log('handleAddClick: success')    
+    if ($('#studentName').val() === '' || $('#course').val() === '' || $('#studentGrade').val() === '') {
+        // alert('Please fill out Name, Course, and Grade!');
         return;
-    }
+    }    else{
+    
     addStudent();
+    }
 }
 
 function handleCancelClick() {
@@ -75,7 +78,25 @@ function addStudent() {
 
 function clearAddStudentFormInputs() {
     console.log('Clear add student from Inputs');
-    $('input:text').val('')
+    // e.preventDefault();
+
+
+    // $('#submitForm').validate().resetForm();
+    // $('#submitForm').find('.error').removeClass('error');
+
+
+    // $('#submitForm').bootstrapValidator('resetForm', true);
+    // $('#submitForm').data('formValidation').resetForm();
+    // $('#submitForm').validator('validate');
+
+    $('input:text').val('');
+    setTimeout(function(){  $(".has-error").removeClass("has-error");
+    $(".help-block li").empty(); }, 0.1);
+
+   
+
+    // $('.list-unstyled').empty();
+
 
 }
 
@@ -94,12 +115,12 @@ function renderStudentOnDom(studentObj) {
     var deleteButtonTd = $('<td>');
 
     var deleteButton = $('<button>', {
-        class: 'btn btn-danger',
+        class: 'btn btn-danger btn-responsive',
         text: 'Delete',
         id: studentObj.id
     });
     var editButton = $('<button>', {
-        class: 'btn btn-warning',
+        class: 'btn btn-warning btn-responsive',
         text: 'Update',
         id: studentObj.id
     });
@@ -380,3 +401,4 @@ function searchSubmit(){
         //     }
         // }
     }
+

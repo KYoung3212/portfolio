@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="input-group" id="adv-search">
-                                <input type="text" id = "mySearch" class="form-control" placeholder="Search for students" />
+                                <input type="text" id = "mySearch" class="form-control" placeholder="Search" />
                                 <div class="input-group-btn">
                                     <div class="btn-group" role="group">
                                         <div class="dropdown dropdown-lg">
@@ -112,7 +112,7 @@
 <!-- End of Search Bar HTML -->
 <div class="container">
 
-        <div class="table-responsive table-hover page-header">
+        <div class="table-responsive table-hover page-header" style= 'border-top: none; border-left: none; border-right: none'>
             <!-- only show this element when the isnt on mobile -->
             <h1 class="visible-md visible-lg">Student Grade Table
                     <!-- <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search for names.."> -->
@@ -137,7 +137,7 @@
         </div>
         <div class="student-add-form col-md-3 pull-right">
             <h4>Add Student</h4>
-        <form data-toggle="validator" role="form">
+        <form data-toggle="validator" role="form" id="submitForm">
             <div class="form-group input-group">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-user "></span>
@@ -162,16 +162,19 @@
                 <div class="help-block with-errors"></div>
 
             </div>
-            <button type="button" class="small-btn btn btn-success addButton ">
+        <span class="form-group">
+            <button type="submit" class="small-btn btn btn-success addButton ">
                  Add
             </button>
+        </span>
             <button type="button" class="small-btn btn btn-default cancel" onclick="">Cancel</button>
-            <div style="padding-top: 5px">
+            <div style="padding-top: 5px; padding-bottom: 5px">
                 <button type="button" class="small-btn btn btn-warning serverData" onclick=""><i class="fa fa-spinner fa-spin"></i> Refresh</button>
             </div>
         </div>
     </form>
 
+    
         <div class="student-list-container col-md-8">
             <table class="student-list table table-border table-responsive">
                 <thead>
@@ -179,7 +182,7 @@
                         <th>Student Name</th>
                         <th>Student Course</th>
                         <th>Student Grade</th>
-                        <th>Operations</th>
+                        <th class = "col-md-2">Operations</th>
                     </tr>
                 </thead>
                 <tbody>
