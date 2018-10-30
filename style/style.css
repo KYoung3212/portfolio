@@ -796,6 +796,8 @@ footer {
   section:nth-of-type(3) #gallery .mix .card {
     width: 100vw; } }
 @media screen and (min-width: 600px) {
+
+
   body {
     font-size: 12pt; }
 
@@ -1035,3 +1037,10 @@ footer {
   .github{
     left: 30%;
   } */
+
+
+  @media screen and (max-width: 600px) {
+    .blogFour {
+      width: 190%
+    }
+  }
