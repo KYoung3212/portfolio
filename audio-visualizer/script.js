@@ -126,7 +126,6 @@ function enableButton()
 function demoButtonClick()
 
 {
-	// Spacing in title name so scrolling of title is displayed
 	fileName = '       Toto - Africa    -    Demo Song       .mp3'
 	var request = new XMLHttpRequest();
 	request.open('GET', 'Toto-Africa.mp3', true);
@@ -148,7 +147,7 @@ function demoButtonClick()
 				showScene();
 			}, function(error)
 			{
-				// console.error(error);
+				console.error(error);
 				showError("Error while decoding the audio", error.toString());
 				document.getElementById("spinner-outer").className = "hidden";
 			});
@@ -157,6 +156,50 @@ function demoButtonClick()
 		};
 	};
 	request.send();
+
+
+	// const reader = new FileReader();
+
+	// reader.onloadend = function(){
+	// 	console.log('Reader Result:', reader.result);
+	// }
+
+	// reader.readAsArrayBuffer('./Toto-Africa.mp3');
+
+	// console.log('File:', file);
+// var fileReader = new FileReader();
+// 	fileReader.onload = function(e)
+// 	{
+// 		var fileResult = e.target.result;
+// 		console.log(e.target);
+// 		if(audioContext == null)
+// 		{
+// 			return;
+// 		}
+// 		audioContext.decodeAudioData(fileResult, function(buffer)
+// 		{
+// 			setTimeout(function() { visualize(buffer); document.getElementById("spinner-outer").className = "hidden"; }, 1000);
+			
+// 			showScene();
+// 		}, function(error)
+// 		{
+// 			console.error(error);
+// 			showError("Error while decoding the audio", error.toString());
+// 			document.getElementById("spinner-outer").className = "hidden";
+// 		});
+// 	};
+// 	fileReader.onerror = function(error)
+// 	{
+// 		console.error(error);
+// 		showError("Error while reading file", error.toString());
+// 		document.getElementById("spinner-outer").className = "hidden";
+// 	};
+
+// 	console.log('File:', file);
+	
+// 	fileReader.readAsArrayBuffer('Toto-Africa.mp3');
+	
+// 	document.getElementById("spinner-outer").className = "";
 }
 
 
