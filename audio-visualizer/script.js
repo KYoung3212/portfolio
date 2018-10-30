@@ -49,6 +49,11 @@ window.onload = function()
 	playButton.onclick = cbButtonClick;
 	disableButton();
 	
+	// DEMO BUTTON
+	demoButton = document.getElementById("demo-button");
+	demoButton.onclick = demoButtonClick;
+	disableButton();
+
 	canvas = document.getElementById("scene-canvas");
 	ctx = canvas.getContext("2d");
 	
