@@ -32,10 +32,10 @@
 <!-- HOME -->
   <div class="modal-wrap flex">
     <div class="mask"></div>
-    <div class="modal" id="modal" style="width: 75%">
-      <div class="carousel-wrap" style="width: 100%">
+    <div class="modal" id="modal">
+      <div class="carousel-wrap">
         <div class="window">
-          <div id="carousel" >
+          <div id="carousel">
           <div class="slide"></div>
           <div class="slide"></div>
           <div class="slide"></div>
@@ -43,20 +43,18 @@
           <i class="mdi mdi-chevron-left" id="prev"></i>
           <i class="mdi mdi-chevron-right" id="next"></i>
         </div>
-      
 
       </div>
       <div class="info-box">
         <div class="title"></div>
         <div class="tag"></div>
         <div class="detail"></div>
-        <span class = "btn-responsive"><a href="#" target="_blank"><div class="button btn-responsive"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div></a></span>
-        <span class = "btn-responsive"><a href="#" target="_blank"><div class="button btn-responsive github" style = "bottom: 1%"><i class="mdi mdi-open-in-new"></i>GITHUB REPO</div></a></span>
-
+        <a href="#" target="_blank"><div class="button"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div></a>
       </div>
       <i class="close mdi mdi-close"></i>
     </div>
   </div>
+
   <section id="home" class="flex height-fix">
     <div id="pt" class="canvas"></div>
     <div class="flex">
@@ -362,7 +360,7 @@
       </div>
 
       <div class="mix js" data-my-order="1">
-        <div class = "mod" id="airbnb">
+        <div class = "mod" id="walker">
           <div class="card"></div>
           <div class="text">
             <div class="bold">Airbnb Website</div>
@@ -513,7 +511,7 @@
       <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">Have a question or want to work together?</div>
       <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
         <input placeholder="Name" type="text" name="name" required>
-        <input placeholder="Enter email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        <input placeholder="Enter email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="this.setCustomValidity('Please enter a valid email')" required>
         <textarea placeholder="Your Message" type="text" name="message"></textarea>
         <div id="success">
           <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
