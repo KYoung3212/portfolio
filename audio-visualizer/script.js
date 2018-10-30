@@ -122,6 +122,47 @@ function enableButton()
 	document.getElementById("chooser-button").className = "";
 }
 
+
+function demoButtonClick()
+
+{
+	// Spacing in title name so scrolling of title is displayed
+	fileName = '       Toto - Africa    -    Demo Song       .mp3'
+	var request = new XMLHttpRequest();
+	request.open('GET', 'Toto-Africa.mp3', true);
+	request.responseType = 'blob';
+	request.onload = function() {
+		var reader = new FileReader();
+		reader.readAsArrayBuffer(request.response);
+		reader.onload =  function(e){
+			var fileResult = e.target.result;
+			// console.log(e.target);
+			if(audioContext == null)
+			{
+				return;
+			}
+			audioContext.decodeAudioData(fileResult, function(buffer)
+			{
+				setTimeout(function() { visualize(buffer); document.getElementById("spinner-outer").className = "hidden"; }, 1000);
+				
+				showScene();
+			}, function(error)
+			{
+				// console.error(error);
+				showError("Error while decoding the audio", error.toString());
+				document.getElementById("spinner-outer").className = "hidden";
+			});
+			document.getElementById("spinner-outer").className = "";
+
+		};
+	};
+	request.send();
+}
+
+
+
+
+
 function cbButtonClick()
 {
 	if(!buttonDisabled)
