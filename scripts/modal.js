@@ -44,7 +44,7 @@ $(document).ready(function(){
       title: 'Drum Kit',
       tag: 'Interactive Freestyle Drum-Kit',
       detail: 'The Drum Kit creates a real-time drum kit, allowing the user to create their own sounds with the use of the keyboard or mouse.',
-      link: 'https://www.kevin-young.us/drum-kit',
+      link: 'https://www.kevin-young.us/drumkit-react',
       github: 'https://github.com/KYoung3212/drumkit-react'
 
     }
