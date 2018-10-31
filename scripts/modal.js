@@ -20,7 +20,7 @@ $(document).ready(function(){
       title: 'Student Grade Table',
       tag: 'FULL-STACK STUDENT GRADE TRACKING SYSTEM.',
       detail: 'A Content Management System (CMS) that allows users to search, create, read, and delete student grade information from a MySQL database. As a full-stack web application that utilizes PHP calls to access the customized MySQL tables, SGT utilizes CRON to regularly scrub data to protect from hackers and profanity. A search bar is also implemented to easily narrow the student list down based off student name, course, and grade.',
-      link: 'https://www.kevin-young.us/student-grade-table',
+      link: 'https://www.kevin-young.us/SGT',
       github: 'https://github.com/KYoung3212/student-grade-table'
 
     },
