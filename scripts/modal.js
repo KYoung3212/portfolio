@@ -6,8 +6,8 @@ $(document).ready(function(){
       title: 'StandApp',
       tag: 'SOCIAL MEDIA PLATFORM.',
       detail: 'StandApp provides users a platform to record their audio only performances to then share with the world for feedback. Being built as a mobile-app, entirely with React JS and Redux on the frontend, and AWS S3 services on the backend, StandApp is able allow users to get rid of the concept of stage-fright by taking away the stage.  Think Americas Got Talent without the stage.',
-      link: 'https://www.standapp.live',
-      // github: 'https://github.com/KYoung3212/standapp'
+      // link: 'https://www.standapp.live',
+      github: 'https://github.com/KYoung3212/standapp'
     },
     airbnb: {
       title: 'Airbnb Template ',
