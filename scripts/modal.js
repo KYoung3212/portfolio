@@ -7,21 +7,21 @@ $(document).ready(function(){
       tag: 'SOCIAL MEDIA PLATFORM.',
       detail: 'StandApp provides users a platform to record their audio only performances to then share with the world for feedback. Being built as a mobile-app, entirely with React JS and Redux on the frontend, and AWS S3 services on the backend, StandApp is able allow users to get rid of the concept of stage-fright by taking away the stage.  Think Americas Got Talent without the stage.',
       link: 'https://www.standapp.live',
-      github: 'https://github.com/KYoung3212/standapp'
+      // github: 'https://github.com/KYoung3212/standapp'
     },
     airbnb: {
       title: 'Airbnb Template ',
       tag: 'Self-created template utilizing HTML5 & CSS3',
       detail: 'My self-created airbnb website template demonstrates my ability to create a responsive homepage for companies who want to catch the user interest with a modern look/approach.',
       link: 'https://www.kevin-young.us/airbnb-template',
-      github: 'https://github.com/KYoung3212/template-airbnb'
+      // github: 'https://github.com/KYoung3212/template-airbnb'
     },
     SGT: {
       title: 'Student Grade Table',
       tag: 'FULL-STACK STUDENT GRADE TRACKING SYSTEM.',
       detail: 'A Content Management System (CMS) that allows users to search, create, read, and delete student grade information from a MySQL database. As a full-stack web application that utilizes PHP calls to access the customized MySQL tables, SGT utilizes CRON to regularly scrub data to protect from hackers and profanity. A search bar is also implemented to easily narrow the student list down based off student name, course, and grade.',
       link: 'https://www.kevin-young.us/SGT',
-      github: 'https://github.com/KYoung3212/student-grade-table'
+      // github: 'https://github.com/KYoung3212/student-grade-table'
 
     },
     whack: {
@@ -29,7 +29,7 @@ $(document).ready(function(){
       tag: 'Real-Time Whack-a-mole game.',
       detail: 'Whack-A-Mole is a React based desktop/mobile game, utlizing animations, to give the user a real-time experience.',
       link: 'http://whack-a-mole.kevin-young.us',
-      github: 'https://github.com/KYoung3212/whack_a_mole_react'
+      // github: 'https://github.com/KYoung3212/whack_a_mole_react'
 
     },
     audiovisualizer: {
@@ -37,7 +37,7 @@ $(document).ready(function(){
       tag: 'Loadable/Real-time audio visualizer.',
       detail: 'The Audio Visualizer brings any .mp3 file to life with the use of Canvas and .mp3 uploads.',
       link: 'https://www.kevin-young.us/audio-visualizer',
-      github: 'https://github.com/KYoung3212/audio-visualizer'
+      // github: 'https://github.com/KYoung3212/audio-visualizer'
 
     },
     drumkit: {
@@ -45,7 +45,7 @@ $(document).ready(function(){
       tag: 'Interactive Freestyle Drum-Kit',
       detail: 'The Drum Kit creates a real-time drum kit, allowing the user to create their own sounds with the use of the keyboard or mouse.',
       link: 'https://www.kevin-young.us/drumkit-react',
-      github: 'https://github.com/KYoung3212/drumkit-react'
+      // github: 'https://github.com/KYoung3212/drumkit-react'
 
     }
   };
