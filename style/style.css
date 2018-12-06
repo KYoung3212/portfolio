@@ -792,11 +792,12 @@ footer {
       font-family: 'Open Sans';
       color: #E31B6D; }
 
+
+/* MEDIA QUERIES       */
 @media screen and (max-width: 400px) {
   section:nth-of-type(3) #gallery .mix .card {
     width: 100vw; } }
 @media screen and (min-width: 600px) {
-
 
   body {
     font-size: 12pt; }
