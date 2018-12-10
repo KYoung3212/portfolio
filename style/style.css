@@ -1,3 +1,5 @@
+/* FONTS/ANIMATIONS */
+
 @font-face {
   font-family: 'Raleway';
   src: url("../fonts/Raleway-Regular.ttf"); }
@@ -81,6 +83,8 @@
   100% {
     transform: scale(1);
     opacity: 1; } }
+/* End of FONTS/ANIMATIONS */
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -792,11 +796,12 @@ footer {
       font-family: 'Open Sans';
       color: #E31B6D; }
 
+
+/* MEDIA QUERIES       */
 @media screen and (max-width: 400px) {
   section:nth-of-type(3) #gallery .mix .card {
     width: 100vw; } }
 @media screen and (min-width: 600px) {
-
 
   body {
     font-size: 12pt; }
