@@ -71,7 +71,6 @@ $(function() {
     $("nav").find('[dest="' + anchor + '"]').addClass('active');
   }
 
-
   // EVENT HANDLERS
   $('.page-link').click(function() {
     var anchor = $(this).attr("dest");
@@ -167,6 +166,7 @@ $(function() {
       });
   });
 
+  
   $('#close').click(function() {
     $('#success').removeClass('expand');
   })

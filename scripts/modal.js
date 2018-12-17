@@ -82,9 +82,6 @@ $(document).ready(function(){
   // CLOSE MODAL ONCLICK OUTSIDE MODAL
 
 
-
-  
-
   var carousel = $('#carousel'),
       slideWidth = $(window).innerWidth() * .75,
       threshold = slideWidth/3,

@@ -1,4 +1,5 @@
 <?php
+
 require_once('email_config.php');
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 
@@ -13,16 +14,19 @@ if(empty($message['name'])){
     $output['success'] = false;
     $output['messages'][] = 'missing name key';
 }
+
 $message['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 if(empty($message['email'])){ 
     $output['success'] = false;
     $output['messages'][] = 'invalid email key';
 }
+
 $message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 if(empty($message['message'])){
     $output['success'] = false;
     $output['messages'][] = 'missing message key';
 }
+
 // $message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
 // if(empty($message['message'])){
 //     $output['success'] = false;
