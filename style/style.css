@@ -1,5 +1,4 @@
 /* FONTS/ANIMATIONS */
-
 @font-face {
   font-family: 'Raleway';
   src: url("../fonts/Raleway-Regular.ttf"); }
@@ -796,8 +795,7 @@ footer {
       font-family: 'Open Sans';
       color: #E31B6D; }
 
-
-/* MEDIA QUERIES       */
+/* MEDIA QUERIES*/
 @media screen and (max-width: 400px) {
   section:nth-of-type(3) #gallery .mix .card {
     width: 100vw; } }
@@ -1042,7 +1040,6 @@ footer {
   .github{
     left: 30%;
   } */
-
 
   @media screen and (max-width: 600px) {
     .blogFour {
