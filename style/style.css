@@ -1035,6 +1035,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .blogFour {
+    width: 190%
+  }
+}
+
 /* @media (min-width: 769px) and (max-width: 992px) {
   .btn-responsive {
     padding:4px 9px;
@@ -1053,8 +1059,4 @@ footer {
     left: 30%;
   } */
 
-  @media screen and (max-width: 600px) {
-    .blogFour {
-      width: 190%
-    }
-  }
+  
