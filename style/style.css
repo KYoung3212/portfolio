@@ -1035,6 +1035,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 600px) {
+	.modal-button, .modal-close {
+		margin-bottom: 10vh;
+	}
+}
+
 /* @media (min-width: 769px) and (max-width: 992px) {
   .btn-responsive {
     padding:4px 9px;
